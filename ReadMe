@@ -1,0 +1,19 @@
+First Step:
+- make sure that I can open the pcap files and read a packet
+- want to read a packet one by one and store it in a buffer that is as large as a packet
+    - pcap_open_offline() - will open the file, save the file descriptor, and save any errors in error buffer
+        - if cannot open the file (returned file descriptor is NULL), return error to STDERR
+    - pcap_next_ex() - reads the next packet and returns success or failure
+        - returns 0 if no packets to read
+        - returns 1 if the packet gets read
+        - -1 means there is an error
+        - -2 means end of file is reached
+
+Reading Ethernet Header:
+- pcap_next_ex will return a pointer to the start of the packet payload
+- first 14 bytes are guaranteed to be the Ethernet header
+- The destination MAC address (6 bytes) then the source MAC address (6 bytes) then the type of the following data (2 bytes) 
+- Store this info into a struct
+- read out from the struct
+- also keep global counter of how many packets there are total? 
+- use the ethernet print functions to print it out right
