@@ -21,17 +21,23 @@ int main (int argc, char* argv[]) {
     }
 
     //go through the packets (store output value, the struct that holds packet data, and the pointer to the payload)
-    // pcap_t *output = NULL;
+    //pcap_t *output = NULL;
     struct pcap_pkthdr *packet_metadata;
     const u_int8_t *packet_data;
 
     while (pcap_next_ex(result, &packet_metadata, &packet_data) > 0) {
         packet_counter++;
         int cur_packet_length = packet_metadata->len;
+       
+        //move the global pointer to be where the packet data starts
+        place_in_packet = packet_data;
 
         print_packet_info(packet_counter, cur_packet_length);
         print_ethernet_header(packet_data);
-     
+
+        //ip header takes current place in the packet
+        print_ip_header(place_in_packet);
+
     }
     
     //close the file

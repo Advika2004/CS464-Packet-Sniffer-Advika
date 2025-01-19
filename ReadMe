@@ -17,3 +17,12 @@ Reading Ethernet Header:
 - read out from the struct
 - also keep global counter of how many packets there are total? 
 - use the ethernet print functions to print it out right
+
+Reading the IP header: 
+- the structs that are being made are going to match the exact bytes that get read out, will split up the fields while reading the struct and printing them out 
+- keep a global pointer of where I am in the packet
+- after reading the ethernet header, move the global variable forward 14 bytes
+- assign that pointer to the ip header struct, the feilds will get filled in automatically
+- then read out the ip fields, doing the network to host conversions before printing them out
+- for the checksum, use memcpy
+- NEED TO MAKE SURE TO MOVE GLOBAL PTR BACK TO START OF PACKET WHEN DONE READING
