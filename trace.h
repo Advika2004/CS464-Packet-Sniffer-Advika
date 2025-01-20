@@ -2,6 +2,7 @@
 #include <stdint.h>
 #include <netinet/ether.h>
 #include <arpa/inet.h>
+#include <stdlib.h>
 
 //?structs
 struct ethernetHeader {
@@ -38,9 +39,17 @@ struct tcpHeader{
     uint32_t ACKNumber;
     uint8_t offset;
     uint8_t flags;
-    uint16_t totalLength;
+    uint16_t windowSize;
     uint16_t checksum;
     //after the checksum is the UDP payload
+}__attribute__((packed));
+
+struct pseudoIPHeader{
+    uint32_t srcIP;
+    uint32_t destIP;
+    uint8_t reservedBits;
+    uint8_t protocol;
+    uint16_t tcpLength;
 }__attribute__((packed));
 
 //?macros
@@ -67,3 +76,4 @@ int print_tcp_header(const u_int8_t *payload, struct ipHeader* ip_head);
 
 //?global
 const u_int8_t *place_in_packet;
+const u_int8_t *where_ip_addys_are;

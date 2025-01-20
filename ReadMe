@@ -32,4 +32,10 @@ Printing out TCP:
 - need to build that from IP? take parts and memcpy them? 
 - make a buffer with the size of pseudoheader + maximum tcp size
 - tcp = ip total length - ip header length
-
+TCP CHECKSUM:
+- need to create the pseudo header from the data given in ip
+- helps you error check and make sure the TCP level is correct before moving to IP level
+- since the data for the pseudoheader and the TCP segment come from different places, need to put them together in a buffer
+- malloc for the size of the buffer
+- use memcpy to copy things from the packet into the buffer
+- then call the checksum on the entire buffer
