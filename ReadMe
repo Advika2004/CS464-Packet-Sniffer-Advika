@@ -26,3 +26,10 @@ Reading the IP header:
 - then read out the ip fields, doing the network to host conversions before printing them out
 - for the checksum, use memcpy
 - NEED TO MAKE SURE TO MOVE GLOBAL PTR BACK TO START OF PACKET WHEN DONE READING
+- have if statments for what the protocol type is so that it can print out UDP or TCP next
+
+Printing out TCP:
+- need to build that from IP? take parts and memcpy them? 
+- make a buffer with the size of pseudoheader + maximum tcp size
+- tcp = ip total length - ip header length
+

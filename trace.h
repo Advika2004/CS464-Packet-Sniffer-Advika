@@ -3,7 +3,7 @@
 #include <netinet/ether.h>
 #include <arpa/inet.h>
 
-//struct to hold the ethernet fields
+//?structs
 struct ethernetHeader {
     uint8_t macAddy[6]; //MAC address (6 bytes)
     uint8_t destAddy[6]; //destination address (6 bytes)
@@ -23,18 +23,47 @@ struct ipHeader {
     struct in_addr destIP;
 }__attribute__((packed));
 
+struct udpHeader{
+    uint16_t sourcePort;
+    uint16_t destPort;
+    uint16_t totalLength;
+    uint16_t checksum;
+    //after the checksum is the UDP payload
+}__attribute__((packed));
 
-//macros
+struct tcpHeader{
+    uint16_t sourcePort;
+    uint16_t destPort;
+    uint32_t sequenceNumber;
+    uint32_t ACKNumber;
+    uint8_t offset;
+    uint8_t flags;
+    uint16_t totalLength;
+    uint16_t checksum;
+    //after the checksum is the UDP payload
+}__attribute__((packed));
+
+//?macros
 #define UPPPERNIBBLE 0xF0
 #define LOWERNIBBLE 0x0F
+
 #define UPPER6BITS 0x11111100
 #define LOWER2BITS 0x00000011
 
-//functions
+#define FIN 0x01 //0000 0001
+#define SYN 0x02 //0000 0010
+#define RST 0x04 //0000 0100
+#define ACK 0x10
+ //0000 1000
+
+
+//?functions
 int print_ethernet_header(const u_int8_t *payload);
 int print_packet_info(int count, int length);
 int print_ip_header(const u_int8_t *payload);
+int print_udp_header(const u_int8_t *payload);
+int print_tcp_header(const u_int8_t *payload, struct ipHeader* ip_head);
 
 
-//global
+//?global
 const u_int8_t *place_in_packet;

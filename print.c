@@ -83,7 +83,123 @@ int print_ip_header(const u_int8_t *payload){
     printf("\tDest IP: %s\n\n", inet_ntoa(ip_head->destIP));
 
     //! move the pointer past IP after done processing it
-    place_in_packet += ip_head->totalLength;
+    place_in_packet += ip_header_length;
+
+    if (ip_head->protocol == 0x11){
+        print_udp_header(place_in_packet);
+    }
+    else if (ip_head->protocol == 0x06) {
+        print_tcp_header(place_in_packet, ip_head);
+    }
+
+    return 0;
+}
+
+int print_udp_header(const u_int8_t *payload){
+
+    struct udpHeader *udp_head = (struct udpHeader*)(payload);
+
+    printf("UDP Header\n");
+
+    if (ntohs(udp_head->sourcePort) == 0x0035){
+        printf("\tSource Port: DNS\n"); 
+    }
+    else {
+        printf("\tSource Port: %d\n", ntohs(udp_head->sourcePort));
+    }
+
+    if (ntohs(udp_head->destPort) == 0x0035){
+        printf("\tDest Port: DNS\n\n"); 
+    }
+    else {
+        printf("\tDest Port: %d\n\n", ntohs(udp_head->destPort));
+    }
+
+    // //! move the pointer past UDP? but is there anything after? don't I just move onto the next packet? 
+    // place_in_packet += ntohs(udp_head->totalLength);
+
+    return 0;
+}
+
+int print_tcp_header(const u_int8_t *payload, struct ipHeader* ip_head){
+
+    struct tcpHeader *tcp_head = (struct tcpHeader*)(payload);
+    
+    uint16_t ip_total_length = ntohs(ip_head->totalLength);
+    uint8_t ip_header_length = (ip_head->versionAndHeaderLength & LOWERNIBBLE) * 4;
+
+    uint16_t tcp_total_length = ip_total_length - ip_header_length;
+
+    printf("TCP Header\n");
+
+    if (ntohs(tcp_head->sourcePort) == 0x0050){
+        printf("\tSource Port: HTTP\n"); 
+    }
+    else {
+        printf("\tSource Port: %d\n", ntohs(tcp_head->sourcePort));
+    }
+
+    if (ntohs(tcp_head->destPort) == 0x0050){
+        printf("\tDest Port: HTTP\n"); 
+    }
+    else {
+        printf("\tDest Port: %d\n", ntohs(tcp_head->destPort));
+    }
+
+    printf("\tSequence Number: %u\n", ntohl(tcp_head->sequenceNumber));
+
+    printf("\tACK Number: %u\n", ntohl(tcp_head->ACKNumber));
+
+    //extract the offset and the flags
+    //the actual offset bits are only the upper nibble, the rest is the reserved bits
+    //so isolate the upper nibble
+    uint8_t data_offset = (((tcp_head->offset) & UPPPERNIBBLE) / 16) * 4;
+    uint8_t flags = tcp_head->flags;
+
+    printf("\tData Offset (bytes): %d\n", data_offset);
+
+    //all the flags
+    if (!(flags & SYN)){
+        printf("\tSYN Flag: No\n");
+    }
+    else{
+        printf("\tSYN Flag: Yes\n");
+    }
+
+    if (!(flags & RST)){
+        printf("\tRST Flag: No\n");
+    }
+    else{
+        printf("\tRST Flag: Yes\n");
+    }
+    
+    if (!(flags & FIN)){
+        printf("\tFIN Flag: No\n");
+    }
+    else{
+        printf("\tFIN Flag: Yes\n");
+    }
+
+    if (!(flags & ACK)){
+        printf("\tACK Flag: No\n");
+    }
+    else{
+        printf("\tACK Flag: Yes\n");
+    }
+
+    printf("\tWindow Size: \n");
+
+
+
+    
+    // //checksum
+    // if (in_cksum((unsigned short *)place_in_packet, ip_header_length) == 0) {
+
+    //     printf("\tChecksum: Correct (0x%04x)\n", ntohs(ip_head->checksum));
+    // }
+    // else {
+    //     printf("\tChecksum: Incorrect (0x%04x)\n", ntohs(ip_head->checksum));
+    // }
 
     return 0;
 }
