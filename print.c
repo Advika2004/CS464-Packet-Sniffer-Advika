@@ -11,8 +11,6 @@ int print_ethernet_header(const u_int8_t *payload){
     //cast the data ptr to a struct ptr so that the struct fields get filled with the right stuff
     struct ethernetHeader *eth_head = (struct ethernetHeader*)(payload);
 
-    //! move the pointer to where IP starts
-    place_in_packet += 14;
     
     //start printing it out
     printf("Ethernet Header\n");
@@ -27,10 +25,35 @@ int print_ethernet_header(const u_int8_t *payload){
     }
     else if (converted_type == 0x0806){
         printf("\tType: ARP\n\n");
+        print_ARP_header(place_in_packet);
     }
     else {
         printf("\tType: 0x%04x\n\n", converted_type);
+        print_ICMP_header(place_in_packet);
     }
+
+     //! move the pointer to where IP starts
+    place_in_packet += 14;
+
+    return 0;
+}
+
+int print_ARP_header(const u_int8_t *payload){
+
+    struct ARPHeader *arp_head = (struct ARPHeader*)(payload); 
+
+    printf("ARP header\n");
+    printf("\tOpcode: %d\n", arp_head->opcode);
+    printf("\tSender MAC: %d\n", arp_head->senderMacAddy);
+    printf("\tSender IP: %d\n", arp_head->senderIPAddy);
+    printf("\tTarget MAC: %d\n", arp_head->targetMacAddy);
+    printf("\tTarget IP: %d\n", arp_head->targetIPAddy);
+    
+    return 0;
+}
+
+int print_ICMP_header(const u_int8_t *payload){
+
     return 0;
 }
 
@@ -230,7 +253,7 @@ int calculate_checksum(const u_int8_t *payload, struct ipHeader* ip_head) {
     uint32_t ip_dest_addy;
 
     //working
-    
+
     memcpy(&ip_src_addy, where_ip_addys_are, 4); 
 
     where_ip_addys_are += 4;
@@ -270,12 +293,12 @@ int calculate_checksum(const u_int8_t *payload, struct ipHeader* ip_head) {
     
     //!DEBIG PRINT
      // Print the buffer contents in hex
-    printf("Debug: Checksum Buffer (Hex Dump):\n");
-    for (int i = 0; i < PSEUDOHEADER + tcp_total_length_host; i++) {
-        printf("%02x ", checksum_buffer[i]);
-        if ((i + 1) % 16 == 0) printf("\n");
-    }
-    printf("\n");
+    // printf("Debug: Checksum Buffer (Hex Dump):\n");
+    // for (int i = 0; i < PSEUDOHEADER + tcp_total_length_host; i++) {
+    //     printf("%02x ", checksum_buffer[i]);
+    //     if ((i + 1) % 16 == 0) printf("\n");
+    // }
+    // printf("\n");
    
     int totalLength = PSEUDOHEADER + tcp_total_length_host;
 
@@ -284,7 +307,7 @@ int calculate_checksum(const u_int8_t *payload, struct ipHeader* ip_head) {
     free(pseudo_head);
     free(checksum_buffer);
 
-    printf("RESULT: %d\n", result);
+    //printf("RESULT: %d\n", result);
     return result;
 
 }

@@ -12,6 +12,19 @@ struct ethernetHeader {
     uint16_t type; 
 }__attribute__((packed)); //should be 14b bytes total
 
+struct ARPHeader{
+    uint8_t opcode;
+    uint8_t senderMacAddy[6];
+    uint8_t senderIPAddy[6];
+    uint8_t targetMacAddy[6];
+    uint8_t targetIPAddy[6];
+}__attribute__((packed));
+
+// struct ICMPHeader{
+//     uint8_t type:
+
+// }__attribute__((packed));
+
 struct ipHeader {
     uint8_t versionAndHeaderLength; //first 4 bits is the version, next 4 bits is the length
     uint8_t TOS; //tos field, upper 6 bits = DSC and lower 2 bits = ECN
@@ -74,6 +87,8 @@ int print_ip_header(const u_int8_t *payload);
 int print_udp_header(const u_int8_t *payload);
 int print_tcp_header(const u_int8_t *payload, struct ipHeader* ip_head);
 int calculate_checksum(const u_int8_t *payload, struct ipHeader* ip_head);
+int print_ARP_header(const u_int8_t *payload);
+int print_ICMP_header(const u_int8_t *payload);
 
 
 //?global
