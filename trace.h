@@ -3,6 +3,7 @@
 #include <netinet/ether.h>
 #include <arpa/inet.h>
 #include <stdlib.h>
+#include <string.h>
 
 //?structs
 struct ethernetHeader {
@@ -72,6 +73,7 @@ int print_packet_info(int count, int length);
 int print_ip_header(const u_int8_t *payload);
 int print_udp_header(const u_int8_t *payload);
 int print_tcp_header(const u_int8_t *payload, struct ipHeader* ip_head);
+int calculate_checksum(const u_int8_t *payload, struct ipHeader* ip_head);
 
 
 //?global

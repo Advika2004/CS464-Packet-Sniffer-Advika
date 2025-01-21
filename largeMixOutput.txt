@@ -17,9 +17,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 64.166.172.8
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 UDP Header
 	Source Port: 1300
 	Dest Port: DNS
@@ -43,9 +40,6 @@ IP Header
 	Sender IP: 64.166.172.8
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 UDP Header
 	Source Port: DNS
 	Dest Port: 1300
@@ -69,9 +63,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.245.61
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1652
 	Dest Port: HTTP
@@ -83,6 +74,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: No
 	Window Size: 16384
+was checksum right: 1
+	Checksum: Incorrect (0x6057)
+
 Packet number: 4  Packet Len: 62
 
 Ethernet Header
@@ -102,9 +96,6 @@ IP Header
 	Sender IP: 207.46.245.61
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1652
@@ -116,6 +107,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 4356
+was checksum right: 1
+	Checksum: Incorrect (0x25cb)
+
 Packet number: 5  Packet Len: 54
 
 Ethernet Header
@@ -135,9 +129,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.245.61
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1652
 	Dest Port: HTTP
@@ -149,6 +140,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0x1f7b)
+
 Packet number: 6  Packet Len: 741
 
 Ethernet Header
@@ -168,9 +162,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.245.61
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1652
 	Dest Port: HTTP
@@ -182,6 +173,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0xbd9a)
+
 Packet number: 7  Packet Len: 334
 
 Ethernet Header
@@ -201,9 +195,6 @@ IP Header
 	Sender IP: 207.46.245.61
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1652
@@ -215,6 +206,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 5043
+was checksum right: 1
+	Checksum: Incorrect (0x3210)
+
 Packet number: 8  Packet Len: 54
 
 Ethernet Header
@@ -234,9 +228,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.245.61
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1652
 	Dest Port: HTTP
@@ -248,6 +239,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17144
+was checksum right: 1
+	Checksum: Incorrect (0x1ccc)
+
 Packet number: 9  Packet Len: 77
 
 Ethernet Header
@@ -267,9 +261,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 64.166.172.8
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 UDP Header
 	Source Port: 1300
 	Dest Port: DNS
@@ -293,9 +284,6 @@ IP Header
 	Sender IP: 64.166.172.8
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 UDP Header
 	Source Port: DNS
 	Dest Port: 1300
@@ -319,9 +307,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.150.51
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1653
 	Dest Port: HTTP
@@ -333,6 +318,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: No
 	Window Size: 16384
+was checksum right: 1
+	Checksum: Incorrect (0x1363)
+
 Packet number: 12  Packet Len: 62
 
 Ethernet Header
@@ -352,9 +340,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1653
@@ -366,6 +351,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 4356
+was checksum right: 1
+	Checksum: Incorrect (0x055b)
+
 Packet number: 13  Packet Len: 54
 
 Ethernet Header
@@ -385,9 +373,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.150.51
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1653
 	Dest Port: HTTP
@@ -399,6 +384,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0xff0a)
+
 Packet number: 14  Packet Len: 1213
 
 Ethernet Header
@@ -418,9 +406,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.150.51
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1653
 	Dest Port: HTTP
@@ -432,6 +417,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0x8941)
+
 Packet number: 15  Packet Len: 1453
 
 Ethernet Header
@@ -451,9 +439,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1653
@@ -465,6 +450,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 5515
+was checksum right: 1
+	Checksum: Incorrect (0xddbe)
+
 Packet number: 16  Packet Len: 1506
 
 Ethernet Header
@@ -484,9 +472,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1653
@@ -498,6 +483,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 5515
+was checksum right: 1
+	Checksum: Incorrect (0xbb1a)
+
 Packet number: 17  Packet Len: 54
 
 Ethernet Header
@@ -517,9 +505,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.150.51
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1653
 	Dest Port: HTTP
@@ -531,6 +516,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0xef60)
+
 Packet number: 18  Packet Len: 1506
 
 Ethernet Header
@@ -550,9 +538,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1653
@@ -564,6 +549,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 5515
+was checksum right: 1
+	Checksum: Incorrect (0xdb74)
+
 Packet number: 19  Packet Len: 1506
 
 Ethernet Header
@@ -583,9 +571,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1653
@@ -597,6 +582,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 5515
+was checksum right: 1
+	Checksum: Incorrect (0xa63a)
+
 Packet number: 20  Packet Len: 54
 
 Ethernet Header
@@ -616,9 +604,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.150.51
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1653
 	Dest Port: HTTP
@@ -630,6 +615,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0xe408)
+
 Packet number: 21  Packet Len: 1506
 
 Ethernet Header
@@ -649,9 +637,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1653
@@ -663,6 +648,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 5515
+was checksum right: 1
+	Checksum: Incorrect (0x727c)
+
 Packet number: 22  Packet Len: 1506
 
 Ethernet Header
@@ -682,9 +670,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1653
@@ -696,6 +681,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 5515
+was checksum right: 1
+	Checksum: Incorrect (0xebab)
+
 Packet number: 23  Packet Len: 54
 
 Ethernet Header
@@ -715,9 +703,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.150.51
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1653
 	Dest Port: HTTP
@@ -729,6 +714,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0xd8b0)
+
 Packet number: 24  Packet Len: 1506
 
 Ethernet Header
@@ -748,9 +736,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1653
@@ -762,6 +747,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 5515
+was checksum right: 1
+	Checksum: Incorrect (0x215d)
+
 Packet number: 25  Packet Len: 54
 
 Ethernet Header
@@ -781,9 +769,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.150.51
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1653
 	Dest Port: HTTP
@@ -795,6 +780,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0xd304)
+
 Packet number: 26  Packet Len: 1506
 
 Ethernet Header
@@ -814,9 +802,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1653
@@ -828,6 +813,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 5515
+was checksum right: 1
+	Checksum: Incorrect (0x20c9)
+
 Packet number: 27  Packet Len: 1506
 
 Ethernet Header
@@ -847,9 +835,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1653
@@ -861,6 +846,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 5515
+was checksum right: 1
+	Checksum: Incorrect (0x8dfd)
+
 Packet number: 28  Packet Len: 54
 
 Ethernet Header
@@ -880,9 +868,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.150.51
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1653
 	Dest Port: HTTP
@@ -894,6 +879,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0xc7ac)
+
 Packet number: 29  Packet Len: 1506
 
 Ethernet Header
@@ -913,9 +901,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1653
@@ -927,6 +912,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 5515
+was checksum right: 1
+	Checksum: Incorrect (0x918c)
+
 Packet number: 30  Packet Len: 54
 
 Ethernet Header
@@ -946,9 +934,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.150.51
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1653
 	Dest Port: HTTP
@@ -960,6 +945,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0xc200)
+
 Packet number: 31  Packet Len: 1506
 
 Ethernet Header
@@ -979,9 +967,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1653
@@ -993,6 +978,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 5515
+was checksum right: 1
+	Checksum: Incorrect (0x4328)
+
 Packet number: 32  Packet Len: 54
 
 Ethernet Header
@@ -1012,9 +1000,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.150.51
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1653
 	Dest Port: HTTP
@@ -1026,6 +1011,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0xbc54)
+
 Packet number: 33  Packet Len: 946
 
 Ethernet Header
@@ -1045,9 +1033,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1653
@@ -1059,6 +1044,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 5515
+was checksum right: 1
+	Checksum: Incorrect (0x587f)
+
 Packet number: 34  Packet Len: 54
 
 Ethernet Header
@@ -1078,9 +1066,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.150.51
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1653
 	Dest Port: HTTP
@@ -1092,6 +1077,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16532
+was checksum right: 1
+	Checksum: Incorrect (0xbc54)
+
 Packet number: 35  Packet Len: 1250
 
 Ethernet Header
@@ -1111,9 +1099,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.150.51
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1653
 	Dest Port: HTTP
@@ -1125,6 +1110,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16532
+was checksum right: 1
+	Checksum: Incorrect (0x5d10)
+
 Packet number: 36  Packet Len: 1506
 
 Ethernet Header
@@ -1144,9 +1132,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1653
@@ -1158,6 +1143,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 6711
+was checksum right: 1
+	Checksum: Incorrect (0x2e75)
+
 Packet number: 37  Packet Len: 75
 
 Ethernet Header
@@ -1177,9 +1165,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1653
@@ -1191,6 +1176,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 6711
+was checksum right: 1
+	Checksum: Incorrect (0xa7c9)
+
 Packet number: 38  Packet Len: 54
 
 Ethernet Header
@@ -1210,9 +1198,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.150.51
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1653
 	Dest Port: HTTP
@@ -1224,6 +1209,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0xae6b)
+
 Packet number: 39  Packet Len: 1506
 
 Ethernet Header
@@ -1243,9 +1231,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1653
@@ -1257,6 +1242,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 6711
+was checksum right: 1
+	Checksum: Incorrect (0xeb62)
+
 Packet number: 40  Packet Len: 1506
 
 Ethernet Header
@@ -1276,9 +1264,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1653
@@ -1290,6 +1275,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 6711
+was checksum right: 1
+	Checksum: Incorrect (0x37de)
+
 Packet number: 41  Packet Len: 54
 
 Ethernet Header
@@ -1309,9 +1297,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.150.51
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1653
 	Dest Port: HTTP
@@ -1323,6 +1308,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0xa313)
+
 Packet number: 42  Packet Len: 1506
 
 Ethernet Header
@@ -1342,9 +1330,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1653
@@ -1356,6 +1341,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 6711
+was checksum right: 1
+	Checksum: Incorrect (0x9a9b)
+
 Packet number: 43  Packet Len: 54
 
 Ethernet Header
@@ -1375,9 +1363,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.150.51
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1653
 	Dest Port: HTTP
@@ -1389,6 +1374,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0x9d67)
+
 Packet number: 44  Packet Len: 1506
 
 Ethernet Header
@@ -1408,9 +1396,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1653
@@ -1422,6 +1407,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 6711
+was checksum right: 1
+	Checksum: Incorrect (0x9592)
+
 Packet number: 45  Packet Len: 218
 
 Ethernet Header
@@ -1441,9 +1429,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1653
@@ -1455,6 +1440,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 6711
+was checksum right: 1
+	Checksum: Incorrect (0xaeb9)
+
 Packet number: 46  Packet Len: 54
 
 Ethernet Header
@@ -1474,9 +1462,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.150.51
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1653
 	Dest Port: HTTP
@@ -1488,6 +1473,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0x9717)
+
 Packet number: 47  Packet Len: 60
 
 Ethernet Header
@@ -1507,9 +1495,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1653
@@ -1521,6 +1506,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 6711
+was checksum right: 1
+	Checksum: Incorrect (0xc0f0)
+
 Packet number: 48  Packet Len: 69
 
 Ethernet Header
@@ -1540,9 +1528,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 64.166.172.8
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 UDP Header
 	Source Port: 1300
 	Dest Port: DNS
@@ -1566,9 +1551,6 @@ IP Header
 	Sender IP: 64.166.172.8
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 UDP Header
 	Source Port: DNS
 	Dest Port: 1300
@@ -1592,9 +1574,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.216.61
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1654
 	Dest Port: HTTP
@@ -1606,6 +1585,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: No
 	Window Size: 16384
+was checksum right: 1
+	Checksum: Incorrect (0xe928)
+
 Packet number: 51  Packet Len: 62
 
 Ethernet Header
@@ -1625,9 +1607,6 @@ IP Header
 	Sender IP: 207.46.216.61
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1654
@@ -1639,6 +1618,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16384
+was checksum right: 1
+	Checksum: Incorrect (0x3d38)
+
 Packet number: 52  Packet Len: 54
 
 Ethernet Header
@@ -1658,9 +1640,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.216.61
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1654
 	Dest Port: HTTP
@@ -1672,6 +1651,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0x65e4)
+
 Packet number: 53  Packet Len: 834
 
 Ethernet Header
@@ -1691,9 +1673,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.216.61
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1654
 	Dest Port: HTTP
@@ -1705,6 +1684,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0xb5a9)
+
 Packet number: 54  Packet Len: 79
 
 Ethernet Header
@@ -1724,9 +1706,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 64.166.172.8
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 UDP Header
 	Source Port: 1300
 	Dest Port: DNS
@@ -1750,9 +1729,6 @@ IP Header
 	Sender IP: 64.166.172.8
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 UDP Header
 	Source Port: DNS
 	Dest Port: 1300
@@ -1776,9 +1752,6 @@ IP Header
 	Sender IP: 207.46.216.61
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1654
@@ -1790,6 +1763,9 @@ TCP Header
 	FIN Flag: Yes
 	ACK Flag: Yes
 	Window Size: 64755
+was checksum right: 1
+	Checksum: Incorrect (0x8aeb)
+
 Packet number: 57  Packet Len: 54
 
 Ethernet Header
@@ -1809,9 +1785,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.216.61
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1654
 	Dest Port: HTTP
@@ -1823,6 +1796,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17040
+was checksum right: 1
+	Checksum: Incorrect (0x62d7)
+
 Packet number: 58  Packet Len: 62
 
 Ethernet Header
@@ -1842,9 +1818,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 66.151.152.106
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1655
 	Dest Port: HTTP
@@ -1856,6 +1829,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: No
 	Window Size: 16384
+was checksum right: 1
+	Checksum: Incorrect (0x8eb6)
+
 Packet number: 59  Packet Len: 54
 
 Ethernet Header
@@ -1875,9 +1851,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.216.61
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1654
 	Dest Port: HTTP
@@ -1889,6 +1862,9 @@ TCP Header
 	FIN Flag: Yes
 	ACK Flag: Yes
 	Window Size: 17040
+was checksum right: 1
+	Checksum: Incorrect (0x62d6)
+
 Packet number: 60  Packet Len: 62
 
 Ethernet Header
@@ -1908,9 +1884,6 @@ IP Header
 	Sender IP: 66.151.152.106
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1655
@@ -1922,6 +1895,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 5840
+was checksum right: 1
+	Checksum: Incorrect (0x3978)
+
 Packet number: 61  Packet Len: 54
 
 Ethernet Header
@@ -1941,9 +1917,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 66.151.152.106
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1655
 	Dest Port: HTTP
@@ -1955,6 +1928,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16560
+was checksum right: 1
+	Checksum: Incorrect (0x3c0c)
+
 Packet number: 62  Packet Len: 1434
 
 Ethernet Header
@@ -1974,9 +1950,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 66.151.152.106
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1655
 	Dest Port: HTTP
@@ -1988,6 +1961,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16560
+was checksum right: 1
+	Checksum: Incorrect (0x2a53)
+
 Packet number: 63  Packet Len: 1434
 
 Ethernet Header
@@ -2007,9 +1983,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 66.151.152.106
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1655
 	Dest Port: HTTP
@@ -2021,6 +1994,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16560
+was checksum right: 1
+	Checksum: Incorrect (0xe735)
+
 Packet number: 64  Packet Len: 60
 
 Ethernet Header
@@ -2040,9 +2016,6 @@ IP Header
 	Sender IP: 207.46.216.61
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1654
@@ -2054,6 +2027,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 64755
+was checksum right: 1
+	Checksum: Incorrect (0xa872)
+
 Packet number: 65  Packet Len: 60
 
 Ethernet Header
@@ -2073,9 +2049,6 @@ IP Header
 	Sender IP: 66.151.152.106
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1655
@@ -2087,6 +2060,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 8280
+was checksum right: 1
+	Checksum: Incorrect (0x5700)
+
 Packet number: 66  Packet Len: 1434
 
 Ethernet Header
@@ -2106,9 +2082,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 66.151.152.106
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1655
 	Dest Port: HTTP
@@ -2120,6 +2093,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16560
+was checksum right: 1
+	Checksum: Incorrect (0x0793)
+
 Packet number: 67  Packet Len: 914
 
 Ethernet Header
@@ -2139,9 +2115,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 66.151.152.106
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1655
 	Dest Port: HTTP
@@ -2153,6 +2126,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16560
+was checksum right: 1
+	Checksum: Incorrect (0xd919)
+
 Packet number: 68  Packet Len: 60
 
 Ethernet Header
@@ -2172,9 +2148,6 @@ IP Header
 	Sender IP: 66.151.152.106
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1655
@@ -2186,6 +2159,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 11040
+was checksum right: 1
+	Checksum: Incorrect (0x46d4)
+
 Packet number: 69  Packet Len: 78
 
 Ethernet Header
@@ -2205,9 +2181,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 64.166.172.8
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 UDP Header
 	Source Port: 1300
 	Dest Port: DNS
@@ -2231,9 +2204,6 @@ IP Header
 	Sender IP: 66.151.152.106
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1655
@@ -2245,6 +2215,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 13800
+was checksum right: 1
+	Checksum: Incorrect (0x36a8)
+
 Packet number: 71  Packet Len: 501
 
 Ethernet Header
@@ -2264,9 +2237,6 @@ IP Header
 	Sender IP: 64.166.172.8
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 UDP Header
 	Source Port: DNS
 	Dest Port: 1300
@@ -2290,9 +2260,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1656
 	Dest Port: HTTP
@@ -2304,6 +2271,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: No
 	Window Size: 16384
+was checksum right: 1
+	Checksum: Incorrect (0x08cc)
+
 Packet number: 73  Packet Len: 60
 
 Ethernet Header
@@ -2323,9 +2293,6 @@ IP Header
 	Sender IP: 66.151.152.106
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1655
@@ -2337,6 +2304,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16560
+was checksum right: 1
+	Checksum: Incorrect (0x2884)
+
 Packet number: 74  Packet Len: 60
 
 Ethernet Header
@@ -2356,9 +2326,6 @@ IP Header
 	Sender IP: 66.151.152.106
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1655
@@ -2370,6 +2337,9 @@ TCP Header
 	FIN Flag: Yes
 	ACK Flag: Yes
 	Window Size: 16560
+was checksum right: 1
+	Checksum: Incorrect (0x2221)
+
 Packet number: 75  Packet Len: 66
 
 Ethernet Header
@@ -2389,9 +2359,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 66.151.152.106
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1655
 	Dest Port: HTTP
@@ -2403,6 +2370,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16560
+was checksum right: 1
+	Checksum: Incorrect (0xe84a)
+
 Packet number: 76  Packet Len: 308
 
 Ethernet Header
@@ -2422,9 +2392,6 @@ IP Header
 	Sender IP: 66.151.152.106
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1655
@@ -2436,6 +2403,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16560
+was checksum right: 1
+	Checksum: Incorrect (0xfc6f)
+
 Packet number: 77  Packet Len: 66
 
 Ethernet Header
@@ -2455,9 +2425,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 66.151.152.106
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1655
 	Dest Port: HTTP
@@ -2469,6 +2436,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16560
+was checksum right: 1
+	Checksum: Incorrect (0xe948)
+
 Packet number: 78  Packet Len: 1434
 
 Ethernet Header
@@ -2488,9 +2458,6 @@ IP Header
 	Sender IP: 66.151.152.106
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1655
@@ -2502,6 +2469,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16560
+was checksum right: 1
+	Checksum: Incorrect (0x1f63)
+
 Packet number: 79  Packet Len: 66
 
 Ethernet Header
@@ -2521,9 +2491,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 66.151.152.106
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1655
 	Dest Port: HTTP
@@ -2535,6 +2502,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16560
+was checksum right: 1
+	Checksum: Incorrect (0xe2e5)
+
 Packet number: 80  Packet Len: 54
 
 Ethernet Header
@@ -2554,9 +2524,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 66.151.152.106
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1655
 	Dest Port: HTTP
@@ -2568,6 +2535,9 @@ TCP Header
 	FIN Flag: Yes
 	ACK Flag: Yes
 	Window Size: 16560
+was checksum right: 1
+	Checksum: Incorrect (0x2220)
+
 Packet number: 81  Packet Len: 62
 
 Ethernet Header
@@ -2587,9 +2557,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1656
@@ -2601,6 +2568,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 5840
+was checksum right: 1
+	Checksum: Incorrect (0x2da3)
+
 Packet number: 82  Packet Len: 54
 
 Ethernet Header
@@ -2620,9 +2590,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1656
 	Dest Port: HTTP
@@ -2634,6 +2601,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0x2d1f)
+
 Packet number: 83  Packet Len: 852
 
 Ethernet Header
@@ -2653,9 +2623,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1656
 	Dest Port: HTTP
@@ -2667,6 +2634,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0x886a)
+
 Packet number: 84  Packet Len: 62
 
 Ethernet Header
@@ -2686,9 +2656,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1657
 	Dest Port: HTTP
@@ -2700,6 +2667,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: No
 	Window Size: 16384
+was checksum right: 1
+	Checksum: Incorrect (0x0cdc)
+
 Packet number: 85  Packet Len: 60
 
 Ethernet Header
@@ -2719,9 +2689,6 @@ IP Header
 	Sender IP: 66.151.152.106
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1655
@@ -2733,6 +2700,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16560
+was checksum right: 1
+	Checksum: Incorrect (0x2220)
+
 Packet number: 86  Packet Len: 60
 
 Ethernet Header
@@ -2752,9 +2722,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1656
@@ -2766,6 +2733,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 7182
+was checksum right: 1
+	Checksum: Incorrect (0x5203)
+
 Packet number: 87  Packet Len: 283
 
 Ethernet Header
@@ -2785,9 +2755,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1656
@@ -2799,6 +2766,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 7182
+was checksum right: 1
+	Checksum: Incorrect (0x47a9)
+
 Packet number: 88  Packet Len: 765
 
 Ethernet Header
@@ -2818,9 +2788,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1656
 	Dest Port: HTTP
@@ -2832,6 +2799,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17195
+was checksum right: 1
+	Checksum: Incorrect (0x1c40)
+
 Packet number: 89  Packet Len: 62
 
 Ethernet Header
@@ -2851,9 +2821,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1657
@@ -2865,6 +2832,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 5840
+was checksum right: 1
+	Checksum: Incorrect (0x0e7c)
+
 Packet number: 90  Packet Len: 54
 
 Ethernet Header
@@ -2884,9 +2854,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1657
 	Dest Port: HTTP
@@ -2898,6 +2865,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0x0df8)
+
 Packet number: 91  Packet Len: 854
 
 Ethernet Header
@@ -2917,9 +2887,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1657
 	Dest Port: HTTP
@@ -2931,6 +2898,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0x33f2)
+
 Packet number: 92  Packet Len: 62
 
 Ethernet Header
@@ -2950,9 +2920,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 66.151.152.106
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1658
 	Dest Port: HTTP
@@ -2964,6 +2931,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: No
 	Window Size: 16384
+was checksum right: 1
+	Checksum: Incorrect (0x925f)
+
 Packet number: 93  Packet Len: 1506
 
 Ethernet Header
@@ -2983,9 +2953,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1656
@@ -2997,6 +2964,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 8778
+was checksum right: 1
+	Checksum: Incorrect (0x3add)
+
 Packet number: 94  Packet Len: 1506
 
 Ethernet Header
@@ -3016,9 +2986,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1656
@@ -3030,6 +2997,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 8778
+was checksum right: 1
+	Checksum: Incorrect (0x4ffa)
+
 Packet number: 95  Packet Len: 54
 
 Ethernet Header
@@ -3049,9 +3019,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1656
 	Dest Port: HTTP
@@ -3063,6 +3030,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0x1afd)
+
 Packet number: 96  Packet Len: 1506
 
 Ethernet Header
@@ -3082,9 +3052,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1656
@@ -3096,6 +3063,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 8778
+was checksum right: 1
+	Checksum: Incorrect (0xb2fc)
+
 Packet number: 97  Packet Len: 54
 
 Ethernet Header
@@ -3115,9 +3085,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1656
 	Dest Port: HTTP
@@ -3129,6 +3096,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0x1551)
+
 Packet number: 98  Packet Len: 1506
 
 Ethernet Header
@@ -3148,9 +3118,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1656
@@ -3162,6 +3129,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 8778
+was checksum right: 1
+	Checksum: Incorrect (0xd885)
+
 Packet number: 99  Packet Len: 60
 
 Ethernet Header
@@ -3181,9 +3151,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1657
@@ -3195,6 +3162,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 7200
+was checksum right: 1
+	Checksum: Incorrect (0x32c8)
+
 Packet number: 100  Packet Len: 284
 
 Ethernet Header
@@ -3214,9 +3184,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1657
@@ -3228,6 +3195,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 7200
+was checksum right: 1
+	Checksum: Incorrect (0xe407)
+
 Packet number: 101  Packet Len: 62
 
 Ethernet Header
@@ -3247,9 +3217,6 @@ IP Header
 	Sender IP: 66.151.152.106
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1658
@@ -3261,6 +3228,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 5840
+was checksum right: 1
+	Checksum: Incorrect (0x0017)
+
 Packet number: 102  Packet Len: 54
 
 Ethernet Header
@@ -3280,9 +3250,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 66.151.152.106
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1658
 	Dest Port: HTTP
@@ -3294,6 +3261,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16560
+was checksum right: 1
+	Checksum: Incorrect (0x02ab)
+
 Packet number: 103  Packet Len: 1434
 
 Ethernet Header
@@ -3313,9 +3283,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 66.151.152.106
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1658
 	Dest Port: HTTP
@@ -3327,6 +3294,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16560
+was checksum right: 1
+	Checksum: Incorrect (0xdd36)
+
 Packet number: 104  Packet Len: 1434
 
 Ethernet Header
@@ -3346,9 +3316,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 66.151.152.106
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1658
 	Dest Port: HTTP
@@ -3360,6 +3327,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16560
+was checksum right: 1
+	Checksum: Incorrect (0x65ed)
+
 Packet number: 105  Packet Len: 842
 
 Ethernet Header
@@ -3379,9 +3349,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1657
 	Dest Port: HTTP
@@ -3393,6 +3360,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17194
+was checksum right: 1
+	Checksum: Incorrect (0x55bf)
+
 Packet number: 106  Packet Len: 1506
 
 Ethernet Header
@@ -3412,9 +3382,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1656
@@ -3426,6 +3393,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 8778
+was checksum right: 1
+	Checksum: Incorrect (0x0592)
+
 Packet number: 107  Packet Len: 54
 
 Ethernet Header
@@ -3445,9 +3415,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1656
 	Dest Port: HTTP
@@ -3459,6 +3426,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0x09f9)
+
 Packet number: 108  Packet Len: 1506
 
 Ethernet Header
@@ -3478,9 +3448,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1656
@@ -3492,6 +3459,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 8778
+was checksum right: 1
+	Checksum: Incorrect (0xdfa8)
+
 Packet number: 109  Packet Len: 54
 
 Ethernet Header
@@ -3511,9 +3481,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1656
 	Dest Port: HTTP
@@ -3525,6 +3492,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0x044d)
+
 Packet number: 110  Packet Len: 1506
 
 Ethernet Header
@@ -3544,9 +3514,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1656
@@ -3558,6 +3525,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 8778
+was checksum right: 1
+	Checksum: Incorrect (0x48e9)
+
 Packet number: 111  Packet Len: 1506
 
 Ethernet Header
@@ -3577,9 +3547,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1656
@@ -3591,6 +3558,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 8778
+was checksum right: 1
+	Checksum: Incorrect (0x2519)
+
 Packet number: 112  Packet Len: 54
 
 Ethernet Header
@@ -3610,9 +3580,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1656
 	Dest Port: HTTP
@@ -3624,6 +3591,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0xf8f4)
+
 Packet number: 113  Packet Len: 1506
 
 Ethernet Header
@@ -3643,9 +3613,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1656
@@ -3657,6 +3624,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 8778
+was checksum right: 1
+	Checksum: Incorrect (0xc7b9)
+
 Packet number: 114  Packet Len: 60
 
 Ethernet Header
@@ -3676,9 +3646,6 @@ IP Header
 	Sender IP: 66.151.152.106
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1658
@@ -3690,6 +3657,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 8280
+was checksum right: 1
+	Checksum: Incorrect (0x1d9f)
+
 Packet number: 115  Packet Len: 1434
 
 Ethernet Header
@@ -3709,9 +3679,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 66.151.152.106
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1658
 	Dest Port: HTTP
@@ -3723,6 +3690,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16560
+was checksum right: 1
+	Checksum: Incorrect (0x3329)
+
 Packet number: 116  Packet Len: 1005
 
 Ethernet Header
@@ -3742,9 +3712,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 66.151.152.106
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1658
 	Dest Port: HTTP
@@ -3756,6 +3723,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16560
+was checksum right: 1
+	Checksum: Incorrect (0x3aff)
+
 Packet number: 117  Packet Len: 60
 
 Ethernet Header
@@ -3775,9 +3745,6 @@ IP Header
 	Sender IP: 66.151.152.106
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1658
@@ -3789,6 +3756,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 11040
+was checksum right: 1
+	Checksum: Incorrect (0x0d73)
+
 Packet number: 118  Packet Len: 1506
 
 Ethernet Header
@@ -3808,9 +3778,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1656
@@ -3822,6 +3789,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 8778
+was checksum right: 1
+	Checksum: Incorrect (0x7f0b)
+
 Packet number: 119  Packet Len: 54
 
 Ethernet Header
@@ -3841,9 +3811,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1656
 	Dest Port: HTTP
@@ -3855,6 +3822,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0xed9c)
+
 Packet number: 120  Packet Len: 1506
 
 Ethernet Header
@@ -3874,9 +3844,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1656
@@ -3888,6 +3855,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 8778
+was checksum right: 1
+	Checksum: Incorrect (0x0cbe)
+
 Packet number: 121  Packet Len: 284
 
 Ethernet Header
@@ -3907,9 +3877,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1657
@@ -3921,6 +3888,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 8800
+was checksum right: 1
+	Checksum: Incorrect (0xbd77)
+
 Packet number: 122  Packet Len: 625
 
 Ethernet Header
@@ -3940,9 +3910,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1656
@@ -3954,6 +3921,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 8778
+was checksum right: 1
+	Checksum: Incorrect (0x9c79)
+
 Packet number: 123  Packet Len: 66
 
 Ethernet Header
@@ -3973,9 +3943,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1656
 	Dest Port: HTTP
@@ -3987,6 +3954,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0x0662)
+
 Packet number: 124  Packet Len: 60
 
 Ethernet Header
@@ -4006,9 +3976,6 @@ IP Header
 	Sender IP: 66.151.152.106
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1658
@@ -4020,6 +3987,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 13800
+was checksum right: 1
+	Checksum: Incorrect (0xfd46)
+
 Packet number: 125  Packet Len: 1506
 
 Ethernet Header
@@ -4039,9 +4009,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1656
@@ -4053,6 +4020,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 8778
+was checksum right: 1
+	Checksum: Incorrect (0xd989)
+
 Packet number: 126  Packet Len: 60
 
 Ethernet Header
@@ -4072,9 +4042,6 @@ IP Header
 	Sender IP: 66.151.152.106
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1658
@@ -4086,6 +4053,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16560
+was checksum right: 1
+	Checksum: Incorrect (0xeec7)
+
 Packet number: 127  Packet Len: 742
 
 Ethernet Header
@@ -4105,9 +4075,6 @@ IP Header
 	Sender IP: 66.151.152.106
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1658
@@ -4119,6 +4086,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16560
+was checksum right: 1
+	Checksum: Incorrect (0x1b9d)
+
 Packet number: 128  Packet Len: 60
 
 Ethernet Header
@@ -4138,9 +4108,6 @@ IP Header
 	Sender IP: 66.151.152.106
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1658
@@ -4152,6 +4119,9 @@ TCP Header
 	FIN Flag: Yes
 	ACK Flag: Yes
 	Window Size: 16560
+was checksum right: 1
+	Checksum: Incorrect (0xec16)
+
 Packet number: 129  Packet Len: 54
 
 Ethernet Header
@@ -4171,9 +4141,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 66.151.152.106
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1658
 	Dest Port: HTTP
@@ -4185,6 +4152,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 15872
+was checksum right: 1
+	Checksum: Incorrect (0xeec6)
+
 Packet number: 130  Packet Len: 54
 
 Ethernet Header
@@ -4204,9 +4174,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 66.151.152.106
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1658
 	Dest Port: HTTP
@@ -4218,6 +4185,9 @@ TCP Header
 	FIN Flag: Yes
 	ACK Flag: Yes
 	Window Size: 15872
+was checksum right: 1
+	Checksum: Incorrect (0xeec5)
+
 Packet number: 131  Packet Len: 60
 
 Ethernet Header
@@ -4237,9 +4207,6 @@ IP Header
 	Sender IP: 66.151.152.106
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1658
@@ -4251,6 +4218,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16560
+was checksum right: 1
+	Checksum: Incorrect (0xec15)
+
 Packet number: 132  Packet Len: 66
 
 Ethernet Header
@@ -4270,9 +4240,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1656
 	Dest Port: HTTP
@@ -4284,6 +4251,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0x00b6)
+
 Packet number: 133  Packet Len: 54
 
 Ethernet Header
@@ -4303,9 +4273,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1657
 	Dest Port: HTTP
@@ -4317,6 +4284,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16964
+was checksum right: 1
+	Checksum: Incorrect (0x07c4)
+
 Packet number: 134  Packet Len: 1506
 
 Ethernet Header
@@ -4336,9 +4306,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1656
@@ -4350,6 +4317,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 8778
+was checksum right: 1
+	Checksum: Incorrect (0xeb0c)
+
 Packet number: 135  Packet Len: 66
 
 Ethernet Header
@@ -4369,9 +4339,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1656
 	Dest Port: HTTP
@@ -4383,6 +4350,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0xfb09)
+
 Packet number: 136  Packet Len: 1506
 
 Ethernet Header
@@ -4402,9 +4372,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1656
@@ -4416,6 +4383,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 8778
+was checksum right: 1
+	Checksum: Incorrect (0x25ec)
+
 Packet number: 137  Packet Len: 54
 
 Ethernet Header
@@ -4435,9 +4405,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1656
 	Dest Port: HTTP
@@ -4449,6 +4416,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0xd4b1)
+
 Packet number: 138  Packet Len: 976
 
 Ethernet Header
@@ -4468,9 +4438,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1657
 	Dest Port: HTTP
@@ -4482,6 +4449,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16964
+was checksum right: 1
+	Checksum: Incorrect (0xfda7)
+
 Packet number: 139  Packet Len: 847
 
 Ethernet Header
@@ -4501,9 +4471,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1656
 	Dest Port: HTTP
@@ -4515,6 +4482,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0x0685)
+
 Packet number: 140  Packet Len: 73
 
 Ethernet Header
@@ -4534,9 +4504,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 64.166.172.8
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 UDP Header
 	Source Port: 1300
 	Dest Port: DNS
@@ -4560,9 +4527,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1657
@@ -4574,6 +4538,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 10142
+was checksum right: 1
+	Checksum: Incorrect (0xf6bb)
+
 Packet number: 142  Packet Len: 876
 
 Ethernet Header
@@ -4593,9 +4560,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1657
 	Dest Port: HTTP
@@ -4607,6 +4571,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16716
+was checksum right: 1
+	Checksum: Incorrect (0x164d)
+
 Packet number: 143  Packet Len: 169
 
 Ethernet Header
@@ -4626,9 +4593,6 @@ IP Header
 	Sender IP: 64.166.172.8
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 UDP Header
 	Source Port: DNS
 	Dest Port: 1300
@@ -4652,9 +4616,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1656
@@ -4666,6 +4627,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 10374
+was checksum right: 1
+	Checksum: Incorrect (0x56d1)
+
 Packet number: 145  Packet Len: 62
 
 Ethernet Header
@@ -4685,9 +4649,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.150.51
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1659
 	Dest Port: HTTP
@@ -4699,6 +4660,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: No
 	Window Size: 16384
+was checksum right: 1
+	Checksum: Incorrect (0xa2a9)
+
 Packet number: 146  Packet Len: 283
 
 Ethernet Header
@@ -4718,9 +4682,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1657
@@ -4732,6 +4693,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 11986
+was checksum right: 1
+	Checksum: Incorrect (0xf4e3)
+
 Packet number: 147  Packet Len: 62
 
 Ethernet Header
@@ -4751,9 +4715,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1659
@@ -4765,6 +4726,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 4356
+was checksum right: 1
+	Checksum: Incorrect (0x6be5)
+
 Packet number: 148  Packet Len: 54
 
 Ethernet Header
@@ -4784,9 +4748,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.150.51
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1659
 	Dest Port: HTTP
@@ -4798,6 +4759,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0x6595)
+
 Packet number: 149  Packet Len: 1136
 
 Ethernet Header
@@ -4817,9 +4781,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.150.51
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1659
 	Dest Port: HTTP
@@ -4831,6 +4792,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0x0df5)
+
 Packet number: 150  Packet Len: 1506
 
 Ethernet Header
@@ -4850,9 +4814,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1659
@@ -4864,6 +4825,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 5438
+was checksum right: 1
+	Checksum: Incorrect (0xb51b)
+
 Packet number: 151  Packet Len: 54
 
 Ethernet Header
@@ -4883,9 +4847,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1657
 	Dest Port: HTTP
@@ -4897,6 +4858,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16487
+was checksum right: 1
+	Checksum: Incorrect (0x00f4)
+
 Packet number: 152  Packet Len: 54
 
 Ethernet Header
@@ -4916,9 +4880,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1656
 	Dest Port: HTTP
@@ -4930,6 +4891,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17194
+was checksum right: 1
+	Checksum: Incorrect (0xd198)
+
 Packet number: 153  Packet Len: 75
 
 Ethernet Header
@@ -4949,9 +4913,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1659
@@ -4963,6 +4924,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 5438
+was checksum right: 1
+	Checksum: Incorrect (0x486b)
+
 Packet number: 154  Packet Len: 54
 
 Ethernet Header
@@ -4982,9 +4946,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.150.51
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1659
 	Dest Port: HTTP
@@ -4996,6 +4957,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0x5b9a)
+
 Packet number: 155  Packet Len: 686
 
 Ethernet Header
@@ -5015,9 +4979,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1659
@@ -5029,6 +4990,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 5438
+was checksum right: 1
+	Checksum: Incorrect (0xfbe6)
+
 Packet number: 156  Packet Len: 54
 
 Ethernet Header
@@ -5048,9 +5012,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.150.51
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1659
 	Dest Port: HTTP
@@ -5062,6 +5023,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16792
+was checksum right: 1
+	Checksum: Incorrect (0x5b9a)
+
 Packet number: 157  Packet Len: 881
 
 Ethernet Header
@@ -5081,9 +5045,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1656
 	Dest Port: HTTP
@@ -5095,6 +5056,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17194
+was checksum right: 1
+	Checksum: Incorrect (0xa19e)
+
 Packet number: 158  Packet Len: 884
 
 Ethernet Header
@@ -5114,9 +5078,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1657
 	Dest Port: HTTP
@@ -5128,6 +5089,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16487
+was checksum right: 1
+	Checksum: Incorrect (0xa5ba)
+
 Packet number: 159  Packet Len: 283
 
 Ethernet Header
@@ -5147,9 +5111,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1656
@@ -5161,6 +5122,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 11578
+was checksum right: 1
+	Checksum: Incorrect (0xaedb)
+
 Packet number: 160  Packet Len: 284
 
 Ethernet Header
@@ -5180,9 +5144,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1657
@@ -5194,6 +5155,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 13830
+was checksum right: 1
+	Checksum: Incorrect (0x875b)
+
 Packet number: 161  Packet Len: 54
 
 Ethernet Header
@@ -5213,9 +5177,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1656
 	Dest Port: HTTP
@@ -5227,6 +5188,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16965
+was checksum right: 1
+	Checksum: Incorrect (0xce5d)
+
 Packet number: 162  Packet Len: 54
 
 Ethernet Header
@@ -5246,9 +5210,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1657
 	Dest Port: HTTP
@@ -5260,6 +5221,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16257
+was checksum right: 1
+	Checksum: Incorrect (0xfdb5)
+
 Packet number: 163  Packet Len: 71
 
 Ethernet Header
@@ -5279,9 +5243,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 64.166.172.8
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 UDP Header
 	Source Port: 1300
 	Dest Port: DNS
@@ -5305,9 +5266,6 @@ IP Header
 	Sender IP: 64.166.172.8
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 UDP Header
 	Source Port: DNS
 	Dest Port: 1300
@@ -5331,9 +5289,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.68.178.16
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1660
 	Dest Port: HTTP
@@ -5345,6 +5300,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: No
 	Window Size: 16384
+was checksum right: 1
+	Checksum: Incorrect (0xca3f)
+
 Packet number: 166  Packet Len: 60
 
 Ethernet Header
@@ -5364,9 +5322,6 @@ IP Header
 	Sender IP: 207.68.178.16
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1660
@@ -5378,6 +5333,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 8190
+was checksum right: 1
+	Checksum: Incorrect (0x6caf)
+
 Packet number: 167  Packet Len: 54
 
 Ethernet Header
@@ -5397,9 +5355,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.68.178.16
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1660
 	Dest Port: HTTP
@@ -5411,6 +5366,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0x6052)
+
 Packet number: 168  Packet Len: 823
 
 Ethernet Header
@@ -5430,9 +5388,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.68.178.16
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1660
 	Dest Port: HTTP
@@ -5444,6 +5399,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0xfe98)
+
 Packet number: 169  Packet Len: 471
 
 Ethernet Header
@@ -5463,9 +5421,6 @@ IP Header
 	Sender IP: 207.68.178.16
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1660
@@ -5477,6 +5432,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16628
+was checksum right: 1
+	Checksum: Incorrect (0x7950)
+
 Packet number: 170  Packet Len: 54
 
 Ethernet Header
@@ -5496,9 +5454,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.68.178.16
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1660
 	Dest Port: HTTP
@@ -5510,6 +5465,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17007
+was checksum right: 1
+	Checksum: Incorrect (0x5d51)
+
 Packet number: 171  Packet Len: 841
 
 Ethernet Header
@@ -5529,9 +5487,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1656
 	Dest Port: HTTP
@@ -5543,6 +5498,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16965
+was checksum right: 1
+	Checksum: Incorrect (0xdf39)
+
 Packet number: 172  Packet Len: 898
 
 Ethernet Header
@@ -5562,9 +5520,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1657
 	Dest Port: HTTP
@@ -5576,6 +5531,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16257
+was checksum right: 1
+	Checksum: Incorrect (0x5b0c)
+
 Packet number: 173  Packet Len: 1136
 
 Ethernet Header
@@ -5595,9 +5553,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.150.51
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1659
 	Dest Port: HTTP
@@ -5609,6 +5564,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16792
+was checksum right: 1
+	Checksum: Incorrect (0x0602)
+
 Packet number: 174  Packet Len: 283
 
 Ethernet Header
@@ -5628,9 +5586,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1656
@@ -5642,6 +5597,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 13232
+was checksum right: 1
+	Checksum: Incorrect (0x0e1d)
+
 Packet number: 175  Packet Len: 243
 
 Ethernet Header
@@ -5661,9 +5619,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1657
@@ -5675,6 +5630,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 15674
+was checksum right: 1
+	Checksum: Incorrect (0xdd98)
+
 Packet number: 176  Packet Len: 54
 
 Ethernet Header
@@ -5694,9 +5652,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1656
 	Dest Port: HTTP
@@ -5708,6 +5663,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16736
+was checksum right: 1
+	Checksum: Incorrect (0xcb4a)
+
 Packet number: 177  Packet Len: 1357
 
 Ethernet Header
@@ -5727,9 +5685,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1659
@@ -5741,6 +5696,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 6520
+was checksum right: 1
+	Checksum: Incorrect (0xe4d0)
+
 Packet number: 178  Packet Len: 1506
 
 Ethernet Header
@@ -5760,9 +5718,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1659
@@ -5774,6 +5729,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 6520
+was checksum right: 1
+	Checksum: Incorrect (0xaa52)
+
 Packet number: 179  Packet Len: 54
 
 Ethernet Header
@@ -5793,9 +5751,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.150.51
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1659
 	Dest Port: HTTP
@@ -5807,6 +5762,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0x4a25)
+
 Packet number: 180  Packet Len: 54
 
 Ethernet Header
@@ -5826,9 +5784,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1657
 	Dest Port: HTTP
@@ -5840,6 +5795,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16068
+was checksum right: 1
+	Checksum: Incorrect (0xfa69)
+
 Packet number: 181  Packet Len: 849
 
 Ethernet Header
@@ -5859,9 +5817,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1656
 	Dest Port: HTTP
@@ -5873,6 +5828,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16736
+was checksum right: 1
+	Checksum: Incorrect (0xad92)
+
 Packet number: 182  Packet Len: 1042
 
 Ethernet Header
@@ -5892,9 +5850,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1659
@@ -5906,6 +5861,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 6520
+was checksum right: 1
+	Checksum: Incorrect (0x7038)
+
 Packet number: 183  Packet Len: 1063
 
 Ethernet Header
@@ -5925,9 +5883,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1656
@@ -5939,6 +5894,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 14886
+was checksum right: 1
+	Checksum: Incorrect (0xc5c9)
+
 Packet number: 184  Packet Len: 54
 
 Ethernet Header
@@ -5958,9 +5916,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1656
 	Dest Port: HTTP
@@ -5972,6 +5927,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0xc18e)
+
 Packet number: 185  Packet Len: 54
 
 Ethernet Header
@@ -5991,9 +5949,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.150.51
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1659
 	Dest Port: HTTP
@@ -6005,6 +5960,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16436
+was checksum right: 1
+	Checksum: Incorrect (0x4a25)
+
 Packet number: 186  Packet Len: 1178
 
 Ethernet Header
@@ -6024,9 +5982,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.150.51
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1659
 	Dest Port: HTTP
@@ -6038,6 +5993,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16436
+was checksum right: 1
+	Checksum: Incorrect (0xc0be)
+
 Packet number: 187  Packet Len: 1043
 
 Ethernet Header
@@ -6057,9 +6015,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1659
@@ -6071,6 +6026,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 7644
+was checksum right: 1
+	Checksum: Incorrect (0x776a)
+
 Packet number: 188  Packet Len: 54
 
 Ethernet Header
@@ -6090,9 +6048,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.150.51
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1659
 	Dest Port: HTTP
@@ -6104,6 +6059,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0x3e08)
+
 Packet number: 189  Packet Len: 573
 
 Ethernet Header
@@ -6123,9 +6081,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1659
@@ -6137,6 +6092,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 7644
+was checksum right: 1
+	Checksum: Incorrect (0x2753)
+
 Packet number: 190  Packet Len: 883
 
 Ethernet Header
@@ -6156,9 +6114,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1657
 	Dest Port: HTTP
@@ -6170,6 +6125,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16068
+was checksum right: 1
+	Checksum: Incorrect (0xef0f)
+
 Packet number: 191  Packet Len: 54
 
 Ethernet Header
@@ -6189,9 +6147,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.150.51
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1659
 	Dest Port: HTTP
@@ -6203,6 +6158,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16905
+was checksum right: 1
+	Checksum: Incorrect (0x3e08)
+
 Packet number: 192  Packet Len: 283
 
 Ethernet Header
@@ -6222,9 +6180,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1657
@@ -6236,6 +6191,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17518
+was checksum right: 1
+	Checksum: Incorrect (0x2b07)
+
 Packet number: 193  Packet Len: 54
 
 Ethernet Header
@@ -6255,9 +6213,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1657
 	Dest Port: HTTP
@@ -6269,6 +6224,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0xf0fb)
+
 Packet number: 194  Packet Len: 846
 
 Ethernet Header
@@ -6288,9 +6246,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1656
 	Dest Port: HTTP
@@ -6302,6 +6257,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0x4d32)
+
 Packet number: 195  Packet Len: 852
 
 Ethernet Header
@@ -6321,9 +6279,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1657
 	Dest Port: HTTP
@@ -6335,6 +6290,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0x277c)
+
 Packet number: 196  Packet Len: 283
 
 Ethernet Header
@@ -6354,9 +6312,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1656
@@ -6368,6 +6323,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16540
+was checksum right: 1
+	Checksum: Incorrect (0xd7b1)
+
 Packet number: 197  Packet Len: 866
 
 Ethernet Header
@@ -6387,9 +6345,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1656
 	Dest Port: HTTP
@@ -6401,6 +6356,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17195
+was checksum right: 1
+	Checksum: Incorrect (0x5f85)
+
 Packet number: 198  Packet Len: 284
 
 Ethernet Header
@@ -6420,9 +6378,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1657
@@ -6434,6 +6389,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 19362
+was checksum right: 1
+	Checksum: Incorrect (0x852d)
+
 Packet number: 199  Packet Len: 876
 
 Ethernet Header
@@ -6453,9 +6411,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1657
 	Dest Port: HTTP
@@ -6467,6 +6422,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17194
+was checksum right: 1
+	Checksum: Incorrect (0x9897)
+
 Packet number: 200  Packet Len: 284
 
 Ethernet Header
@@ -6486,9 +6444,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1656
@@ -6500,6 +6455,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 18194
+was checksum right: 1
+	Checksum: Incorrect (0x508c)
+
 Packet number: 201  Packet Len: 829
 
 Ethernet Header
@@ -6519,9 +6477,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1656
 	Dest Port: HTTP
@@ -6533,6 +6488,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16965
+was checksum right: 1
+	Checksum: Incorrect (0xf0d2)
+
 Packet number: 202  Packet Len: 283
 
 Ethernet Header
@@ -6552,9 +6510,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1657
@@ -6566,6 +6521,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 21206
+was checksum right: 1
+	Checksum: Incorrect (0x9d32)
+
 Packet number: 203  Packet Len: 297
 
 Ethernet Header
@@ -6585,9 +6543,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1656
@@ -6599,6 +6554,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 19848
+was checksum right: 1
+	Checksum: Incorrect (0x25e7)
+
 Packet number: 204  Packet Len: 54
 
 Ethernet Header
@@ -6618,9 +6576,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1656
 	Dest Port: HTTP
@@ -6632,6 +6587,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16722
+was checksum right: 1
+	Checksum: Incorrect (0xb843)
+
 Packet number: 205  Packet Len: 54
 
 Ethernet Header
@@ -6651,9 +6609,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1657
 	Dest Port: HTTP
@@ -6665,6 +6620,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16965
+was checksum right: 1
+	Checksum: Incorrect (0xeaa7)
+
 Packet number: 206  Packet Len: 908
 
 Ethernet Header
@@ -6684,9 +6642,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1657
 	Dest Port: HTTP
@@ -6698,6 +6653,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16965
+was checksum right: 1
+	Checksum: Incorrect (0x3944)
+
 Packet number: 207  Packet Len: 284
 
 Ethernet Header
@@ -6717,9 +6675,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1657
@@ -6731,6 +6686,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 23050
+was checksum right: 1
+	Checksum: Incorrect (0x3fc5)
+
 Packet number: 208  Packet Len: 54
 
 Ethernet Header
@@ -6750,9 +6708,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1657
 	Dest Port: HTTP
@@ -6764,6 +6719,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16735
+was checksum right: 1
+	Checksum: Incorrect (0xe751)
+
 Packet number: 209  Packet Len: 54
 
 Ethernet Header
@@ -6783,9 +6741,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1657
 	Dest Port: HTTP
@@ -6797,6 +6752,9 @@ TCP Header
 	FIN Flag: Yes
 	ACK Flag: Yes
 	Window Size: 16735
+was checksum right: 1
+	Checksum: Incorrect (0xe750)
+
 Packet number: 210  Packet Len: 54
 
 Ethernet Header
@@ -6816,9 +6774,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1656
 	Dest Port: HTTP
@@ -6830,6 +6785,9 @@ TCP Header
 	FIN Flag: Yes
 	ACK Flag: Yes
 	Window Size: 16722
+was checksum right: 1
+	Checksum: Incorrect (0xb842)
+
 Packet number: 211  Packet Len: 54
 
 Ethernet Header
@@ -6849,9 +6807,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.150.51
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1659
 	Dest Port: HTTP
@@ -6863,6 +6818,9 @@ TCP Header
 	FIN Flag: Yes
 	ACK Flag: Yes
 	Window Size: 16905
+was checksum right: 1
+	Checksum: Incorrect (0x3e07)
+
 Packet number: 212  Packet Len: 54
 
 Ethernet Header
@@ -6882,9 +6840,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.68.178.16
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1660
 	Dest Port: HTTP
@@ -6896,6 +6851,9 @@ TCP Header
 	FIN Flag: Yes
 	ACK Flag: Yes
 	Window Size: 17007
+was checksum right: 1
+	Checksum: Incorrect (0x5d50)
+
 Packet number: 213  Packet Len: 54
 
 Ethernet Header
@@ -6915,9 +6873,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.150.51
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1653
 	Dest Port: HTTP
@@ -6929,6 +6884,9 @@ TCP Header
 	FIN Flag: Yes
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0x9716)
+
 Packet number: 214  Packet Len: 54
 
 Ethernet Header
@@ -6948,9 +6906,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.245.61
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1652
 	Dest Port: HTTP
@@ -6962,6 +6917,9 @@ TCP Header
 	FIN Flag: Yes
 	ACK Flag: Yes
 	Window Size: 17144
+was checksum right: 1
+	Checksum: Incorrect (0x1ccb)
+
 Packet number: 215  Packet Len: 60
 
 Ethernet Header
@@ -6981,9 +6939,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1657
@@ -6995,6 +6950,9 @@ TCP Header
 	FIN Flag: Yes
 	ACK Flag: Yes
 	Window Size: 23050
+was checksum right: 1
+	Checksum: Incorrect (0xcea4)
+
 Packet number: 216  Packet Len: 54
 
 Ethernet Header
@@ -7014,9 +6972,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1657
 	Dest Port: HTTP
@@ -7028,6 +6983,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16735
+was checksum right: 1
+	Checksum: Incorrect (0xe74f)
+
 Packet number: 217  Packet Len: 60
 
 Ethernet Header
@@ -7047,9 +7005,6 @@ IP Header
 	Sender IP: 69.226.92.70
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1656
@@ -7061,6 +7016,9 @@ TCP Header
 	FIN Flag: Yes
 	ACK Flag: Yes
 	Window Size: 19848
+was checksum right: 1
+	Checksum: Incorrect (0xac0b)
+
 Packet number: 218  Packet Len: 54
 
 Ethernet Header
@@ -7080,9 +7038,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 69.226.92.70
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1656
 	Dest Port: HTTP
@@ -7094,6 +7049,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16722
+was checksum right: 1
+	Checksum: Incorrect (0xb841)
+
 Packet number: 219  Packet Len: 60
 
 Ethernet Header
@@ -7113,9 +7071,6 @@ IP Header
 	Sender IP: 207.68.178.16
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1660
@@ -7127,6 +7082,9 @@ TCP Header
 	FIN Flag: Yes
 	ACK Flag: Yes
 	Window Size: 8190
+was checksum right: 1
+	Checksum: Incorrect (0x7fc0)
+
 Packet number: 220  Packet Len: 54
 
 Ethernet Header
@@ -7146,9 +7104,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.68.178.16
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1660
 	Dest Port: HTTP
@@ -7160,6 +7115,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17007
+was checksum right: 1
+	Checksum: Incorrect (0x5d4f)
+
 Packet number: 221  Packet Len: 60
 
 Ethernet Header
@@ -7179,9 +7137,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1659
@@ -7193,6 +7148,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 7644
+was checksum right: 1
+	Checksum: Incorrect (0x6234)
+
 Packet number: 222  Packet Len: 60
 
 Ethernet Header
@@ -7212,9 +7170,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1659
@@ -7226,6 +7181,9 @@ TCP Header
 	FIN Flag: Yes
 	ACK Flag: Yes
 	Window Size: 7644
+was checksum right: 1
+	Checksum: Incorrect (0x6233)
+
 Packet number: 223  Packet Len: 54
 
 Ethernet Header
@@ -7245,9 +7203,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.150.51
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1659
 	Dest Port: HTTP
@@ -7259,6 +7214,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 16905
+was checksum right: 1
+	Checksum: Incorrect (0x3e06)
+
 Packet number: 224  Packet Len: 60
 
 Ethernet Header
@@ -7278,9 +7236,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1653
@@ -7292,6 +7247,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 6711
+was checksum right: 1
+	Checksum: Incorrect (0xc0ef)
+
 Packet number: 225  Packet Len: 60
 
 Ethernet Header
@@ -7311,9 +7269,6 @@ IP Header
 	Sender IP: 207.46.150.51
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1653
@@ -7325,6 +7280,9 @@ TCP Header
 	FIN Flag: Yes
 	ACK Flag: Yes
 	Window Size: 6711
+was checksum right: 1
+	Checksum: Incorrect (0xc0ee)
+
 Packet number: 226  Packet Len: 54
 
 Ethernet Header
@@ -7344,9 +7302,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.150.51
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1653
 	Dest Port: HTTP
@@ -7358,6 +7313,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17424
+was checksum right: 1
+	Checksum: Incorrect (0x9715)
+
 Packet number: 227  Packet Len: 60
 
 Ethernet Header
@@ -7377,9 +7335,6 @@ IP Header
 	Sender IP: 207.46.245.61
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1652
@@ -7391,6 +7346,9 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 5043
+was checksum right: 1
+	Checksum: Incorrect (0x4c10)
+
 Packet number: 228  Packet Len: 60
 
 Ethernet Header
@@ -7410,9 +7368,6 @@ IP Header
 	Sender IP: 207.46.245.61
 	Dest IP: 192.168.1.102
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: HTTP
 	Dest Port: 1652
@@ -7424,6 +7379,9 @@ TCP Header
 	FIN Flag: Yes
 	ACK Flag: Yes
 	Window Size: 5043
+was checksum right: 1
+	Checksum: Incorrect (0x4c0f)
+
 Packet number: 229  Packet Len: 54
 
 Ethernet Header
@@ -7443,9 +7401,6 @@ IP Header
 	Sender IP: 192.168.1.102
 	Dest IP: 207.46.245.61
 
-Address of place_in_packet: 0x21e6522
-Address of where_ip_addys_are: 0x21e651a
-Difference between pointers: -8 bytes
 TCP Header
 	Source Port: 1652
 	Dest Port: HTTP
@@ -7457,3 +7412,6 @@ TCP Header
 	FIN Flag: No
 	ACK Flag: Yes
 	Window Size: 17144
+was checksum right: 1
+	Checksum: Incorrect (0x1cca)
+

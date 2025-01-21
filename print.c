@@ -89,9 +89,9 @@ int print_ip_header(const u_int8_t *payload){
     //should point to where the addresses start
 
     //!TESTING: 
-    printf("Address of place_in_packet: %p\n", (void *)place_in_packet);
-    printf("Address of where_ip_addys_are: %p\n", (void *)where_ip_addys_are);
-    printf("Difference between pointers: %ld bytes\n", (long)(where_ip_addys_are - place_in_packet));
+    // printf("Address of place_in_packet: %p\n", (void *)place_in_packet);
+    // printf("Address of where_ip_addys_are: %p\n", (void *)where_ip_addys_are);
+    // printf("Difference between pointers: %ld bytes\n", (long)(where_ip_addys_are - place_in_packet));
 
 
     if (ip_head->protocol == 0x11){
@@ -133,11 +133,6 @@ int print_udp_header(const u_int8_t *payload){
 int print_tcp_header(const u_int8_t *payload, struct ipHeader* ip_head){
 
     struct tcpHeader *tcp_head = (struct tcpHeader*)(payload);
-    
-    uint16_t ip_total_length = ntohs(ip_head->totalLength);
-    uint8_t ip_header_length = (ip_head->versionAndHeaderLength & LOWERNIBBLE) * 4;
-
-    uint16_t tcp_total_length = ip_total_length - ip_header_length;
 
     printf("TCP Header\n");
 
@@ -198,44 +193,88 @@ int print_tcp_header(const u_int8_t *payload, struct ipHeader* ip_head){
 
     printf("\tWindow Size: %d\n", ntohs(tcp_head->windowSize));
 
+    int checksum_result = calculate_checksum(place_in_packet, ip_head);
 
+    if (checksum_result == 0) {
+        printf("\tChecksum: Correct (0x%04x)\n\n", ntohs(tcp_head->checksum));
+    }
+    else if (checksum_result == 1) {
+        printf("\tChecksum: Incorrect (0x%04x)\n\n", ntohs(tcp_head->checksum));
+    }
+
+    return 0;
+}
+
+int calculate_checksum(const u_int8_t *payload, struct ipHeader* ip_head) {
 
     //put together the pseudoheader
     //need to malloc space for my struct 
     //need to read out the senderIP and the destIP as 32 bits not in_addr type
     //maybe I keep a global pointer to where the IP src address data and destination address data are
     //move the global pointer from the end of IP back 64 bytes, then read forward 32 bytes
+
     struct pseudoIPHeader *pseudo_head = malloc(sizeof(struct pseudoIPHeader));
+    
     if (pseudo_head == NULL) {
-        perror("could not successfully malloc");
+        perror("could not successfully malloc the pseudoheader");
+        exit(EXIT_FAILURE);
+    }
+    
+    uint16_t ip_total_length = ntohs(ip_head->totalLength);
+    uint8_t ip_header_length = (ip_head->versionAndHeaderLength & LOWERNIBBLE) * 4;
+   
+    uint16_t tcp_total_length = ip_total_length - ip_header_length;
+    uint32_t ip_src_addy;
+    uint32_t ip_dest_addy;
+
+    memcpy(&ip_src_addy, where_ip_addys_are, sizeof(uint32_t)); 
+
+    where_ip_addys_are += 4;
+
+    memcpy(&ip_dest_addy, where_ip_addys_are, sizeof(uint32_t));
+
+    pseudo_head->srcIP = ntohl(ip_src_addy);
+    pseudo_head->destIP = ntohl(ip_dest_addy);
+    pseudo_head->reservedBits = 0;
+    pseudo_head->protocol = ip_head->protocol;
+    pseudo_head->tcpLength = htons(tcp_total_length);
+
+    //!DEBUG PRINT STATEMENTS FOR PSEUDOHEADER
+    // printf("Pseudo IP Header:\n");
+    // printf("\tSource IP: %u (0x%x)\n", pseudo_head->srcIP, pseudo_head->srcIP);
+    // printf("\tDestination IP: %u (0x%x)\n", pseudo_head->destIP, pseudo_head->destIP);
+    // printf("\tReserved Bits: %d\n", pseudo_head->reservedBits);
+    // printf("\tProtocol: 0x%x\n", pseudo_head->protocol);
+    // printf("\tTCP Length: %d (0x%x)\n", pseudo_head->tcpLength, pseudo_head->tcpLength);
+
+    //? now that the pseudoheader is made, can create that buffer to hold all the tcp data
+    //? then call checksum on the buffer and return the checksum value. 
+
+    uint8_t *checksum_buffer = malloc(sizeof(struct pseudoIPHeader) + tcp_total_length);
+
+     if (checksum_buffer == NULL) {
+        perror("could not successfully malloc the buffer");
+        free(pseudo_head);
         exit(EXIT_FAILURE);
     }
 
-    // //make a pointer to where the ip addresses start (the current place in the packet is the end of the IP header)
-    // const u_int8_t *ip_addresses;
+    //copy the 12 bytes into the buffer
+    memcpy(checksum_buffer, pseudo_head, sizeof(struct pseudoIPHeader));
 
-    // ip_addresses = place_in_packet -= 64;
-    // //move back the size of two addresses
-    // pseudo_head->srcIP = ip_addresses;
-    // //the first 32 bits is the source IP
-    // ip_addresses += 32;
-    // //move forward, the next 32 bits are the dest IP
-    // pseudo_head->destIP = ip_addresses;
+    //copy the tcp header and data into the buffer
+    struct tcpHeader *tcp_head = (struct tcpHeader*)(payload);
+    memcpy(checksum_buffer, tcp_head, (sizeof(struct tcpHeader) + (tcp_total_length - sizeof(struct tcpHeader))));
+   
 
-    // //fill in the rest of the header like this
-    // pseudo_head->reservedBits = 0;
-    // pseudo_head->protocol = ip_head->protocol;
-    // pseudo_head->tcpLength = tcp_total_length;
+    if (in_cksum((unsigned short *)checksum_buffer, sizeof(struct pseudoIPHeader) + tcp_total_length) == 0) {
+        free(pseudo_head);
+        free(checksum_buffer);
+        return 0;
+    }
+    else {
+        free(pseudo_head);
+        free(checksum_buffer);
+        return 1;
+    }
 
-    
-    // //checksum
-    // if (in_cksum((unsigned short *)place_in_packet, ip_header_length) == 0) {
-
-    //     printf("\tChecksum: Correct (0x%04x)\n\n", ntohs(ip_head->checksum));
-    // }
-    // else {
-    //     printf("\tChecksum: Incorrect (0x%04x)\n\n", ntohs(ip_head->checksum));
-    // }
-
-    return 0;
 }
