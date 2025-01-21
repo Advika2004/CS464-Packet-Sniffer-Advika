@@ -15,7 +15,7 @@ Packet number: 1  Packet Len: 74
 		TTL: 128
 		Protocol: ICMP
 		Checksum: Incorrect (0x1743)
-		Sender IP: 192.168PCd.1.102
+		Sender IP: 192.168.1.102
 		Dest IP: 66.94.230.35
 
 	ICMP Header

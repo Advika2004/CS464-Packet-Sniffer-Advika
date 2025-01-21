@@ -1,3 +1,8 @@
+Advika Deodhar
+CS 464
+Lab Section 6-9pm
+
+_______________________________________My notes as I was coding________________________________________
 First Step:
 - make sure that I can open the pcap files and read a packet
 - want to read a packet one by one and store it in a buffer that is as large as a packet

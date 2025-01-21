@@ -13,17 +13,20 @@ struct ethernetHeader {
 }__attribute__((packed)); //should be 14b bytes total
 
 struct ARPHeader{
-    uint8_t opcode;
+    uint16_t hardwareType;
+    uint16_t protocol;
+    uint8_t hardwareSize;
+    uint8_t protocolSize;
+    uint16_t opcode;
     uint8_t senderMacAddy[6];
-    uint8_t senderIPAddy[6];
+    struct in_addr senderIPAddy;
     uint8_t targetMacAddy[6];
-    uint8_t targetIPAddy[6];
+    struct in_addr targetIPAddy;
 }__attribute__((packed));
 
-// struct ICMPHeader{
-//     uint8_t type:
-
-// }__attribute__((packed));
+struct ICMPHeader{
+    uint8_t type;
+}__attribute__((packed));
 
 struct ipHeader {
     uint8_t versionAndHeaderLength; //first 4 bits is the version, next 4 bits is the length
@@ -69,15 +72,17 @@ struct pseudoIPHeader{
 #define UPPPERNIBBLE 0xF0
 #define LOWERNIBBLE 0x0F
 
-#define UPPER6BITS 0x11111100
-#define LOWER2BITS 0x00000011
+#define UPPPERBYTE 0xFF00
+#define LOWERBYTE 0x00FF
+
+#define UPPER6BITS 0xFC
+#define LOWER2BITS 0x03
 
 #define FIN 0x01 //0000 0001
 #define SYN 0x02 //0000 0010
 #define RST 0x04 //0000 0100
 #define ACK 0x10
 #define PSEUDOHEADER 12
- //0000 1000
 
 
 //?functions

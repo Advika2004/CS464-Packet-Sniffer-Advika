@@ -13,7 +13,7 @@ int main (int argc, char* argv[]) {
     //open the file
     char error_buf[PCAP_ERRBUF_SIZE];
     const char *file_name = argv[1];
-    //(returns a handle?) 
+    //returns a handle 
     pcap_t *result = pcap_open_offline(file_name, error_buf);
     
     if (result == NULL) {
@@ -21,7 +21,6 @@ int main (int argc, char* argv[]) {
     }
 
     //go through the packets (store output value, the struct that holds packet data, and the pointer to the payload)
-    //pcap_t *output = NULL;
     struct pcap_pkthdr *packet_metadata;
     const u_int8_t *packet_data;
 
@@ -34,10 +33,7 @@ int main (int argc, char* argv[]) {
 
         print_packet_info(packet_counter, cur_packet_length);
         print_ethernet_header(packet_data);
-
-        //ip header takes current place in the packet
-        print_ip_header(place_in_packet);
-
+        
     }
     
     //close the file

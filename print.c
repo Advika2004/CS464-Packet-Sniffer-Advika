@@ -6,11 +6,9 @@ int print_packet_info(int count, int length){
     printf("Packet number: %d  Packet Len: %d\n\n", count, length);
     return 0;
 }
-
 int print_ethernet_header(const u_int8_t *payload){
     //cast the data ptr to a struct ptr so that the struct fields get filled with the right stuff
     struct ethernetHeader *eth_head = (struct ethernetHeader*)(payload);
-
     
     //start printing it out
     printf("Ethernet Header\n");
@@ -19,9 +17,13 @@ int print_ethernet_header(const u_int8_t *payload){
 
     uint16_t converted_type = ntohs(eth_head->type);
 
+    //! move the pointer to where IP starts
+    place_in_packet += 14;
+
     //print the type but read byte by byte so no conversion needed
     if (converted_type == 0x0800){
-        printf("\tType: IP\n\n"); 
+        printf("\tType: IP\n\n");
+        print_ip_header(place_in_packet); 
     }
     else if (converted_type == 0x0806){
         printf("\tType: ARP\n\n");
@@ -29,11 +31,7 @@ int print_ethernet_header(const u_int8_t *payload){
     }
     else {
         printf("\tType: 0x%04x\n\n", converted_type);
-        print_ICMP_header(place_in_packet);
     }
-
-     //! move the pointer to where IP starts
-    place_in_packet += 14;
 
     return 0;
 }
@@ -43,16 +41,42 @@ int print_ARP_header(const u_int8_t *payload){
     struct ARPHeader *arp_head = (struct ARPHeader*)(payload); 
 
     printf("ARP header\n");
-    printf("\tOpcode: %d\n", arp_head->opcode);
-    printf("\tSender MAC: %d\n", arp_head->senderMacAddy);
-    printf("\tSender IP: %d\n", arp_head->senderIPAddy);
-    printf("\tTarget MAC: %d\n", arp_head->targetMacAddy);
-    printf("\tTarget IP: %d\n", arp_head->targetIPAddy);
-    
+
+    uint16_t opcode = ntohs(arp_head->opcode);
+
+    if (opcode == 1){
+        printf("\tOpcode: Request\n"); 
+    }
+    else if (opcode == 2){
+        printf("\tOpcode: Reply\n");
+    }
+    else {
+        printf("\tOpcode: Unknown\n");
+    }
+
+    printf("\tSender MAC: %s\n", ether_ntoa((struct ether_addr*)(&arp_head->senderMacAddy)));
+    printf("\tSender IP: %s\n", inet_ntoa(arp_head->senderIPAddy));
+    printf("\tTarget MAC: %s\n", ether_ntoa((struct ether_addr*)(&arp_head->targetMacAddy)));
+    printf("\tTarget IP: %s\n\n", inet_ntoa(arp_head->targetIPAddy));
+
     return 0;
 }
 
 int print_ICMP_header(const u_int8_t *payload){
+
+    struct ICMPHeader *icmp_head = (struct ICMPHeader*)(payload); 
+
+    printf("ICMP Header\n");
+
+    if (icmp_head->type == 8){
+        printf("\tType: Request\n\n"); 
+    }
+    else if (icmp_head->type == 0){
+        printf("\tType: Reply\n\n");
+    }
+    else {
+        printf("\tType: %d\n\n", icmp_head->type);
+    }
 
     return 0;
 }
@@ -71,7 +95,7 @@ int print_ip_header(const u_int8_t *payload){
     uint8_t ip_header_length = (ip_head->versionAndHeaderLength & LOWERNIBBLE) * 4;
 
     //get the upper 6 bits and the lower 2 bits for the DSC and ECN values from the one TOS byte
-    uint8_t DSC = (ip_head->TOS & UPPER6BITS) / 4;
+    uint8_t DSC = (ip_head->TOS & UPPER6BITS) >> 2;
     uint8_t ECN = (ip_head->TOS & LOWER2BITS);
 
     //? print everything: 
@@ -90,8 +114,11 @@ int print_ip_header(const u_int8_t *payload){
     else if (ip_head->protocol == 0x06){
         printf("\tProtocol: TCP\n");
     }
+    else if (ip_head->protocol == 0x01){
+        printf("\tProtocol: ICMP\n");
+    }
     else {
-        printf("\tProtocol: 0x%x\n", ip_head->protocol);
+        printf("\tProtocol: Unknown\n");
     }
     
     //checksum
@@ -109,16 +136,12 @@ int print_ip_header(const u_int8_t *payload){
     //! move the pointer past IP after done processing it
     where_ip_addys_are = place_in_packet + 12;
     place_in_packet += ip_header_length;
-    //should point to where the addresses start
-
-    //!TESTING: 
-    // printf("Address of place_in_packet: %p\n", (void *)place_in_packet);
-    // printf("Address of where_ip_addys_are: %p\n", (void *)where_ip_addys_are);
-    // printf("Difference between pointers: %ld bytes\n", (long)(where_ip_addys_are - place_in_packet));
-
 
     if (ip_head->protocol == 0x11){
         print_udp_header(place_in_packet);
+    }
+    if (ip_head->protocol == 0x01){
+        print_ICMP_header(place_in_packet);
     }
     else if (ip_head->protocol == 0x06) {
         print_tcp_header(place_in_packet, ip_head);
@@ -146,9 +169,6 @@ int print_udp_header(const u_int8_t *payload){
     else {
         printf("\tDest Port: %d\n\n", ntohs(udp_head->destPort));
     }
-
-    // //! move the pointer past UDP? but is there anything after? don't I just move onto the next packet? 
-    // place_in_packet += ntohs(udp_head->totalLength);
 
     return 0;
 }
@@ -230,14 +250,9 @@ int print_tcp_header(const u_int8_t *payload, struct ipHeader* ip_head){
 
 int calculate_checksum(const u_int8_t *payload, struct ipHeader* ip_head) {
 
-    //put together the pseudoheader
-    //need to malloc space for my struct 
-    //need to read out the senderIP and the destIP as 32 bits not in_addr type
-    //maybe I keep a global pointer to where the IP src address data and destination address data are
-    //move the global pointer from the end of IP back 64 bytes, then read forward 32 bytes
-
+    //need to malloc space for my struct
     struct pseudoIPHeader *pseudo_head = malloc(sizeof(struct pseudoIPHeader));
-    
+     
     if (pseudo_head == NULL) {
         perror("could not successfully malloc the pseudoheader");
         exit(EXIT_FAILURE);
@@ -252,27 +267,20 @@ int calculate_checksum(const u_int8_t *payload, struct ipHeader* ip_head) {
     uint32_t ip_src_addy;
     uint32_t ip_dest_addy;
 
-    //working
-
+    //need to read out the senderIP and the destIP as 32 bits not in_addr type
     memcpy(&ip_src_addy, where_ip_addys_are, 4); 
 
+    //keep a global pointer to where the IP src address are
     where_ip_addys_are += 4;
 
     memcpy(&ip_dest_addy, where_ip_addys_are, 4);
 
+    //put together the pseudoheader
     pseudo_head->srcIP = ip_src_addy;
     pseudo_head->destIP = ip_dest_addy;
     pseudo_head->reservedBits = 0;
     pseudo_head->protocol = 6;
     pseudo_head->tcpLength = tcp_total_length_net;
-
-    // //!DEBUG PRINT STATEMENTS FOR PSEUDOHEADER
-    // printf("Debug: Pseudoheader\n");
-    // printf("\tSource IP: %u (0x%x)\n", ntohl(pseudo_head->srcIP), ntohl(pseudo_head->srcIP));
-    // printf("\tDestination IP: %u (0x%x)\n", ntohl(pseudo_head->destIP), ntohl(pseudo_head->destIP));
-    // printf("\tReserved Bits: %d\n", pseudo_head->reservedBits);
-    // printf("\tProtocol: 0x%x\n", pseudo_head->protocol);
-    // printf("\tTCP Length (Network Order): 0x%x\n", pseudo_head->tcpLength);
 
     //? now that the pseudoheader is made, can create that buffer to hold all the tcp data
     //? then call checksum on the buffer and return the checksum value. 
@@ -290,15 +298,6 @@ int calculate_checksum(const u_int8_t *payload, struct ipHeader* ip_head) {
 
     //copy the tcp header and data into the buffer
     memcpy(checksum_buffer + PSEUDOHEADER, place_in_packet, tcp_total_length_host);
-    
-    //!DEBIG PRINT
-     // Print the buffer contents in hex
-    // printf("Debug: Checksum Buffer (Hex Dump):\n");
-    // for (int i = 0; i < PSEUDOHEADER + tcp_total_length_host; i++) {
-    //     printf("%02x ", checksum_buffer[i]);
-    //     if ((i + 1) % 16 == 0) printf("\n");
-    // }
-    // printf("\n");
    
     int totalLength = PSEUDOHEADER + tcp_total_length_host;
 
@@ -307,7 +306,6 @@ int calculate_checksum(const u_int8_t *payload, struct ipHeader* ip_head) {
     free(pseudo_head);
     free(checksum_buffer);
 
-    //printf("RESULT: %d\n", result);
     return result;
 
 }
