@@ -42,7 +42,6 @@ struct tcpHeader{
     uint8_t flags;
     uint16_t windowSize;
     uint16_t checksum;
-    //after the checksum is the UDP payload
 }__attribute__((packed));
 
 struct pseudoIPHeader{
@@ -64,6 +63,7 @@ struct pseudoIPHeader{
 #define SYN 0x02 //0000 0010
 #define RST 0x04 //0000 0100
 #define ACK 0x10
+#define PSEUDOHEADER 12
  //0000 1000
 
 

@@ -198,7 +198,7 @@ int print_tcp_header(const u_int8_t *payload, struct ipHeader* ip_head){
     if (checksum_result == 0) {
         printf("\tChecksum: Correct (0x%04x)\n\n", ntohs(tcp_head->checksum));
     }
-    else if (checksum_result == 1) {
+    else {
         printf("\tChecksum: Incorrect (0x%04x)\n\n", ntohs(tcp_head->checksum));
     }
 
@@ -223,34 +223,36 @@ int calculate_checksum(const u_int8_t *payload, struct ipHeader* ip_head) {
     uint16_t ip_total_length = ntohs(ip_head->totalLength);
     uint8_t ip_header_length = (ip_head->versionAndHeaderLength & LOWERNIBBLE) * 4;
    
-    uint16_t tcp_total_length = ip_total_length - ip_header_length;
+    uint16_t tcp_total_length_host = ip_total_length - ip_header_length;
+    uint16_t tcp_total_length_net = htons(tcp_total_length_host);
+
     uint32_t ip_src_addy;
     uint32_t ip_dest_addy;
 
-    memcpy(&ip_src_addy, where_ip_addys_are, sizeof(uint32_t)); 
+    memcpy(&ip_src_addy, where_ip_addys_are, 4); 
 
     where_ip_addys_are += 4;
 
-    memcpy(&ip_dest_addy, where_ip_addys_are, sizeof(uint32_t));
+    memcpy(&ip_dest_addy, where_ip_addys_are, 4);
 
-    pseudo_head->srcIP = ntohl(ip_src_addy);
-    pseudo_head->destIP = ntohl(ip_dest_addy);
+    pseudo_head->srcIP = ip_src_addy;
+    pseudo_head->destIP = ip_dest_addy;
     pseudo_head->reservedBits = 0;
-    pseudo_head->protocol = ip_head->protocol;
-    pseudo_head->tcpLength = htons(tcp_total_length);
+    pseudo_head->protocol = 6;
+    pseudo_head->tcpLength = tcp_total_length_net;
 
-    //!DEBUG PRINT STATEMENTS FOR PSEUDOHEADER
-    // printf("Pseudo IP Header:\n");
-    // printf("\tSource IP: %u (0x%x)\n", pseudo_head->srcIP, pseudo_head->srcIP);
-    // printf("\tDestination IP: %u (0x%x)\n", pseudo_head->destIP, pseudo_head->destIP);
+    // //!DEBUG PRINT STATEMENTS FOR PSEUDOHEADER
+    // printf("Debug: Pseudoheader\n");
+    // printf("\tSource IP: %u (0x%x)\n", ntohl(pseudo_head->srcIP), ntohl(pseudo_head->srcIP));
+    // printf("\tDestination IP: %u (0x%x)\n", ntohl(pseudo_head->destIP), ntohl(pseudo_head->destIP));
     // printf("\tReserved Bits: %d\n", pseudo_head->reservedBits);
     // printf("\tProtocol: 0x%x\n", pseudo_head->protocol);
-    // printf("\tTCP Length: %d (0x%x)\n", pseudo_head->tcpLength, pseudo_head->tcpLength);
+    // printf("\tTCP Length (Network Order): 0x%x\n", pseudo_head->tcpLength);
 
     //? now that the pseudoheader is made, can create that buffer to hold all the tcp data
     //? then call checksum on the buffer and return the checksum value. 
 
-    uint8_t *checksum_buffer = malloc(sizeof(struct pseudoIPHeader) + tcp_total_length);
+    uint8_t *checksum_buffer = malloc(PSEUDOHEADER + tcp_total_length_host);
 
      if (checksum_buffer == NULL) {
         perror("could not successfully malloc the buffer");
@@ -259,22 +261,28 @@ int calculate_checksum(const u_int8_t *payload, struct ipHeader* ip_head) {
     }
 
     //copy the 12 bytes into the buffer
-    memcpy(checksum_buffer, pseudo_head, sizeof(struct pseudoIPHeader));
+    memcpy(checksum_buffer, pseudo_head, PSEUDOHEADER);
 
     //copy the tcp header and data into the buffer
-    struct tcpHeader *tcp_head = (struct tcpHeader*)(payload);
-    memcpy(checksum_buffer, tcp_head, (sizeof(struct tcpHeader) + (tcp_total_length - sizeof(struct tcpHeader))));
+    memcpy(checksum_buffer + PSEUDOHEADER, place_in_packet, tcp_total_length_host);
+    
+    //!DEBIG PRINT
+     // Print the buffer contents in hex
+    printf("Debug: Checksum Buffer (Hex Dump):\n");
+    for (int i = 0; i < PSEUDOHEADER + tcp_total_length_host; i++) {
+        printf("%02x ", checksum_buffer[i]);
+        if ((i + 1) % 16 == 0) printf("\n");
+    }
+    printf("\n");
    
+    int totalLength = PSEUDOHEADER + tcp_total_length_host;
 
-    if (in_cksum((unsigned short *)checksum_buffer, sizeof(struct pseudoIPHeader) + tcp_total_length) == 0) {
-        free(pseudo_head);
-        free(checksum_buffer);
-        return 0;
-    }
-    else {
-        free(pseudo_head);
-        free(checksum_buffer);
-        return 1;
-    }
+    int result = in_cksum((unsigned short *)checksum_buffer, totalLength);
+
+    free(pseudo_head);
+    free(checksum_buffer);
+
+    printf("RESULT: %d\n", result);
+    return result;
 
 }
