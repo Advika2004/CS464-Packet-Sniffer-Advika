@@ -229,6 +229,8 @@ int calculate_checksum(const u_int8_t *payload, struct ipHeader* ip_head) {
     uint32_t ip_src_addy;
     uint32_t ip_dest_addy;
 
+    //working
+    
     memcpy(&ip_src_addy, where_ip_addys_are, 4); 
 
     where_ip_addys_are += 4;
